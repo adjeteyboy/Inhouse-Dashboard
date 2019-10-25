@@ -1,0 +1,55 @@
+$activeTabColor: #7FDC46;
+$inactiveTabColor: #DC4646;
+
+#header__tabs {
+  grid-area: headerTabs;
+  word-spacing: -3px; // removes white-space between inline a tags
+  
+  & a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 13px 18px;
+    width: 130px;
+    display: inline-block;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #253E5D 0%, #15202B 78.12%);
+    border-radius: 10px 10px 0px 0px;
+
+    // &:active {
+    //   background: #1C2B39;
+    // }
+
+    &.active {
+      background: #1C2B39;
+      border-bottom: 2px solid #1DA1F2;
+    }
+
+    &:hover {
+      background: linear-gradient(180deg, #253E5D 10%, #15202B 88.12%);
+    } 
+  }
+
+  & .app-state-dot {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 12px;
+    border-radius: 50%;
+
+    &.up {
+      background: $activeTabColor;
+      border: 1px solid #F0E052;
+    }
+
+    &.idle {
+      background: #E0AD2B;
+      border: 1px solid #E1BC37;
+    }
+
+    &.down {
+      background: $inactiveTabColor;
+      border: 1px solid #DC6A46;
+    }
+  }
+}

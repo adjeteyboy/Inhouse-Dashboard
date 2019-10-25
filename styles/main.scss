@@ -1,0 +1,22 @@
+$mainBlue: #15202B;
+$iconColor: #1A6087;
+
+@import '_normalize';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $mainBlue;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 40px 100px 1fr;
+  grid-template-areas: 
+    "sideMenu headerTabs"
+    "sideMenu projectSummary"
+    "sideMenu mainContent";
+}
+
+@import 'headerTabs';
+@import 'sideMenu';
+@import 'projectSummary';

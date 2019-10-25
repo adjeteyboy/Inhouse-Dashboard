@@ -1,0 +1,54 @@
+$sideMenuLinksColor: #1A6087;
+$sideMenuLIText: #1A6087;
+
+#side__menu {
+  grid-area: sideMenu;
+  
+
+  & .side__menu-container {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    list-style: none;
+    box-sizing: border-box;
+    width: 243px;
+    
+    & li {
+      display: flex;
+      align-items: center;
+      /* height: 35px; */
+      margin-bottom: 20px;
+      background-color: #192630;
+      box-sizing: border-box;
+      &:hover {
+      background: lighten(#192630, 1%);
+      }
+    }
+
+    & a {
+      text-decoration: none;
+      color: #1A6087;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.2px;
+      height: 35px;
+      width: 183px;
+      display: flex;
+      align-items: center;
+
+    }
+
+    .fa {
+      color: $sideMenuLIText;
+      padding: 0 20px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin: 0 20px;
+      fill: #1A6087;      
+    }
+  }
+}
