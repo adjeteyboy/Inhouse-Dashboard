@@ -477,4 +477,108 @@ body {
   margin-left: 10px;
 }
 
+#main__content {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 270px));
+  gap: 50px;
+  grid-template-rows: 220px 280px;
+  grid-template-areas: "top top feedback" "down down feedback";
+}
+#main__content #main__content--top {
+  grid-area: top;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+#main__content #main__content--top .state-of-hardware {
+  width: 220px;
+  background: #21303D;
+  border: 1px solid rgba(95, 166, 162, 0.4);
+  border-radius: 3px;
+}
+#main__content #main__content--top .state-of-hardware h6 {
+  margin: 10px 30px;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #ACAAAA;
+}
+#main__content #main__content--top .state-of-hardware h5 {
+  margin: 0;
+  margin-left: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #D5D5D5;
+}
+#main__content #main__content--top .state-of-hardware .state-of-hardware__status {
+  margin-left: 30px;
+  margin-top: 26px;
+  display: flex;
+}
+#main__content #main__content--top .state-of-hardware .state-of-hardware__status .cpu-icon, #main__content #main__content--top .state-of-hardware .state-of-hardware__status .ram-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  fill: #134865;
+}
+#main__content #main__content--top .state-of-hardware .state-of-hardware__status .cpu-status, #main__content #main__content--top .state-of-hardware .state-of-hardware__status .ram-status {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #B4E970;
+  margin: 0;
+}
+#main__content #main__content--top .state-of-hardware .state-of-hardware__status .cpu-core, #main__content #main__content--top .state-of-hardware .state-of-hardware__status .ram-core {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #DDDDDD;
+  margin: 0;
+}
+#main__content #main__content--top .usage {
+  width: 266px;
+  background: #21303D;
+  border: 1px solid rgba(95, 166, 162, 0.4);
+  border-radius: 3px;
+}
+#main__content #main__content--top .usage .ram-status, #main__content #main__content--top .usage .ram-core {
+  margin: 0;
+}
+#main__content #main__content--down {
+  grid-area: down;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+  column-gap: 50px;
+}
+#main__content #main__content--down .users {
+  width: 280px;
+  background: #21303D;
+  border: 1px solid rgba(95, 166, 162, 0.4);
+  border-radius: 3px;
+}
+#main__content #main__content--down .tasks {
+  width: 207px;
+  background: #21303D;
+  border: 1px solid rgba(95, 166, 162, 0.4);
+  border-radius: 3px;
+}
+#main__content #main__content--feedback {
+  grid-area: feedback;
+  background: #21303D;
+  border: 1px solid rgba(95, 166, 162, 0.4);
+  border-radius: 3px;
+}
+
 /*# sourceMappingURL=/main.48b3db1d.css.map */

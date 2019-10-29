@@ -1,0 +1,117 @@
+$cardBlue: #21303D;
+
+#main__content {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 270px));
+  gap: 50px;
+  grid-template-rows: 220px 280px;
+  grid-template-areas: 
+    "top top feedback"
+    "down down feedback";
+
+  & #main__content--top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    & .state-of-hardware {
+      width: 220px;
+      background: $cardBlue;
+      border: 1px solid rgba(95, 166, 162, 0.4);
+      border-radius: 3px;
+
+      & h6 {
+        margin: 10px 30px;
+        margin-bottom: 0;
+        margin-right: 0;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #ACAAAA;
+      }
+
+      & h5 {
+        margin: 0;
+        margin-left: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        color: #D5D5D5;
+      }
+
+      & .state-of-hardware__status {
+        margin-left: 30px;
+        margin-top: 26px;
+        display: flex;
+        & .cpu-icon, & .ram-icon {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          fill: #134865;
+        }
+        & .cpu-status, & .ram-status {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          letter-spacing: 0.02em;
+          color: #B4E970;
+          margin: 0;
+        }
+        & .cpu-core, & .ram-core {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.02em;
+          color: #DDDDDD;
+          margin: 0;
+        }
+      }
+    }
+
+
+    & .usage {
+      width: 266px;
+      background: $cardBlue;
+      border: 1px solid rgba(95, 166, 162, 0.4);
+      border-radius: 3px;
+      & .ram-status, & .ram-core {
+        margin: 0;
+      }
+    }
+  }
+  & #main__content--down {
+    grid-area: down;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+    column-gap: 50px;
+
+    & .users {
+      width: 280px;
+      background: $cardBlue;
+      border: 1px solid rgba(95, 166, 162, 0.4);
+      border-radius: 3px;
+    }
+    & .tasks {
+      width: 207px;
+      background: $cardBlue;
+      border: 1px solid rgba(95, 166, 162, 0.4);
+      border-radius: 3px;
+    }
+  }
+  & #main__content--feedback {
+    grid-area: feedback;
+    background: #21303D;
+    border: 1px solid rgba(95, 166, 162, 0.4);
+    border-radius: 3px;
+  }
+}
+
+
