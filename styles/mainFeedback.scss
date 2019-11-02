@@ -1,0 +1,76 @@
+#main__content #main__content--feedback {
+  padding: 55px 30px 30px 30px;
+
+  & .feedback__box {
+    width: auto;
+    background: #2A3743;
+    padding: 15px;
+
+    & .feedback__box--profile .fa-user {
+      color: #555F69;
+      // font-size: 20px;
+      margin-right: 9px;
+    }
+
+    & .feedback__box--profile .feeback__box--userName {
+      font-size: 10px;
+      font-weight: bold;
+      color: #fff;
+      margin: 0 0 4px 0;
+      display: inline;
+      line-height: 12px;
+      letter-spacing: 0.02em;
+    }
+
+    & .feeback__box--timeElapsed {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 300;
+      color:rgba(255, 255, 255, 0.6);
+    }
+
+    & .feeback__box--message {
+      margin-top: 10px;
+      margin-bottom: 13px;
+
+      & p {
+        margin: 0;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.6);
+        display: flex;
+      }
+    }
+
+    & .feeback__box--message-check-outline {
+      width: 18px;
+      height: 18px;
+      background: #AFD6F8;
+      border-radius: 10px;
+      // display: flex;
+      min-width: 18px;
+      display: inline-flex;
+      float: left;
+      margin-right: 18px;
+      justify-content: center;
+      align-items: center;
+      
+      & .fa-check {
+        font-size: 10px;
+      }
+    }
+
+    & .feedback__box--link {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      text-decoration-line: underline;
+      color: #BBC3C9;
+      letter-spacing: 0.03em;
+    }
+  }
+}
