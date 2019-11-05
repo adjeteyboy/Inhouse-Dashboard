@@ -15,6 +15,7 @@ body {
     "sideMenu headerTabs"
     "sideMenu projectSummary"
     "sideMenu mainContent";
+  overflow-x: hidden;
 }
 
 @import 'headerTabs';
